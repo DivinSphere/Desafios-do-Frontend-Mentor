@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+
+
+
+
+<body>
+
+<div class="menu">
+
+
+<img src="./images/usuario.png" title="Usuario" class="foto">
+
+<img src="./images/quadrado.png" title="Home" class="icon active">
+
+<img src="./images/filmes.png" title="Trend" class="icon">
+
+<img src="./images/ultimos.webp" title="Last viewed" class="icon">
+
+<img src="./images/favoritos.png" title="Favorites" class="icon">
+
+<img src="./images/sair.png" title="Exit" class="icon">
+
+
+</div>
+
+
+<div class="conteudo">
+
+
+
+<img src="./images/lupa.png" class="lupa"><input type="text" id="busca" placeholder="Search for movies or TV series" onkeyup="pesquisar()">
+
+
+<script>
+
+function pesquisar(){
+
+var box = document.getElementsByClassName("box");
+
+var texto = document.getElementById("busca").value
+
+
+
+
+for (var i = 0; i < box.length; i++) {
+
+
+
+var valor = box[i].children[1].innerHTML + " " + box[i].children[0].innerHTML; 
+
+if (valor.toLowerCase().includes(texto.toLowerCase()))
+	box[i].style.display="block";
+else
+	box[i].style.display="none";
+
+
+}
+
+
+
+
+
+
+}
+
+</script>
+
+<br><br>
+
+<h1 class="section_title">Recommended for you</h1>
+<div class="filmes">
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2010 * Series * Action</span>
+		<h4>Filme Número 1</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2012 * Movie * Thriller</span>
+		<h4>Filme Número 2</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2014 * Movie * Action</span>
+		<h4>Filme Número 3</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2017 * Series * Thriller</span>
+		<h4>Filme Número 4</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2018 * Movie * Adventure</span>
+		<h4>Filme Número 5</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2021 * Series * Action</span>
+		<h4>Filme Número 6</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2022 * Movie * Adventure</span>
+		<h4>Filme Número 7</h4>
+	</div>
+
+</div>
+
+
+<br><br>
+
+<h1 class="section_title">Last News</h1>
+<div class="filmes">
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2021 * Movie * Horror</span>
+		<h4>Filme Número 8</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2021 * Series * Action</span>
+		<h4>Filme Número 9</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2021 * Series * Horror</span>
+		<h4>Filme Número 10</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2021 * Movie * Thriller</span>
+		<h4>Filme Número 11</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2022 * Movie * Action</span>
+		<h4>Filme Número 12</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2022 * Series * Fiction</span>
+		<h4>Filme Número 13</h4>
+	</div>
+
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2022 * Movie * Fiction</span>
+		<h4>Filme Número 14</h4>
+	</div>
+	
+	<div class="box" style='background-image: url("./images/filme.png");'>
+		<span>2022 * Movie * Adventure</span>
+		<h4>Filme Número 15</h4>
+	</div>
+
+</div>
+
+
+
+
+
+<br><br>
+
+</div>
+
+
+
+
+</body>
+
+
+
+
+</html>
