@@ -1,6 +1,6 @@
 # Desafios-do-Frontend-Mentor
-Repositório para colocar todos os desafios do Frontend Mentor, Estejam eles Completos ou Incompletos
-
+Repositório para colocar todos os desafios do Frontend Mentor
+Alguns desafios terminaram incompletos por alguns motivos, mas mesmo assim decidi colocar eles disponíveis aqui, alguns não estão 100% responsivos e outros não estão usando todas as imagens do projeto original
 
 Entertainment web app:
 
