@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
+
+:root{
+--cor_1: hsl(180, 52%, 96%);
+--cor_2: hsl(180, 31%, 95%);
+--cor_3: #5CA3A4;
+--cor_4: hsl(180, 14%, 20%);
+}
+
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family: 'Outfit', sans-serif;
+font-size:16px;
+}
+
+body{
+	background-color:#0D1323;
+
+}
+
+
+.flex{
+	display:flex;
+}
+
+.container{
+	position:absolute;
+
+
+top:50%;
+left:50%;
+transform:translate(-50%,-50%);
+
+}
+
+ul{
+	list-style-type: none;
+
+	font-weight:bold;
+	margin-left:30px;
+}
+li{
+	padding:5px;
+	color:#B9BDF0;
+}
+
+li:hover{
+		color:white;
+		cursor:pointer;
+}
+
+img{
+	width:70px;
+	border-radius:100%;
+	border:3px solid white;
+}
+
+.box{
+	
+	width:250px;
+	height:500px;
+	margin:10px;
+	
+	display:flex;
+	flex-direction:column;
+	gap:20px;
+	
+	border-radius:20px;
+}
+
+.box2{
+	background-color:blue;
+	width:250px;
+	height:250px;
+	border-radius:21px;
+	background-repeat:no-repeat;
+	background-position:right 20px top -10px;
+}
+
+
+
+.conteudo{
+	margin-top:40px;
+	width:250px;
+	height:200px;
+	background-color:#1D204B;
+	border-radius:20px;
+	position:relative;
+	z-index:999;
+	outline:-1px solid #1D204B;
+	padding:25px;
+}
+
+.box3{
+
+	width:250px;
+	height:350px;
+	background-color:#5746EA;
+	border-radius:20px;
+	position:relative;
+	z-index:999;
+	outline:-1px solid #1D204B;
+	padding:25px;
+}
+
+.conteudo:hover{
+	background-color:#34397B;
+	cursor:pointer;
+}
+
+dot{
+	float:right;
+	font-size:20px;
+	margin-top:-12px;
+}
+
+
+h4{
+	color:white;
+	font-weight:bold;
+}
+
+span{
+	color:white;
+	font-weight:bold;
+	font-size:50px;
+
+}
+
+p{
+	font-weight:bold;
+	color:#B9BDF0;
+}
+
+
+
+.b1{
+	background-color:#FF8B64;
+	background-image:url("./images/icon-work.svg");
+}
+
+.b2{
+	background-color:#4BCF83;
+	background-image:url("./images/icon-exercise.svg");
+}
+
+.b3{
+	background-color:#56C2E6;
+	background-image:url("./images/icon-play.svg");
+}
+
+.b4{
+	background-color:#7235D1;
+	background-image:url("./images/icon-social.svg");
+}
+
+.b5{
+	background-color:#FF5E7D;
+	background-image:url("./images/icon-study.svg");
+}
+
+.b6{
+	background-color:#F1C75B;
+	background-image:url("./images/icon-self-care.svg");
+}
